@@ -1,8 +1,8 @@
 import React from 'react'
-import './Placeorder.css'
+import './PlaceOrder.css'
 
 
-export default function Placeorder() {
+export default function PlaceOrder() {
   return (
     <div>
       
