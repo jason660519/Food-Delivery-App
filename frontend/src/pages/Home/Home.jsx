@@ -10,8 +10,6 @@ const Home = () => {
     <>
       <Header/>
       <ExploreMenu setCategory={setCategory} category={category}/>
-      <FoodDisplay category={category}/>
-      <AppDownload/>
     </>
   )
 }
