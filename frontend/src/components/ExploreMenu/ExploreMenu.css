@@ -30,6 +30,12 @@
     border-radius: 50%;
     transition: 0.2s;
 }
+/* width: 7.5vw; min-width: 80px; - 設置圖片的寬度為視口寬度的7.5%,但不小於80像素。
+cursor: pointer; - 當滑鼠懸停在圖片上時,顯示一個指針游標,表示圖片可以被點擊。
+border-radius: 50%; - 將圖片設置為圓形。
+transition: 0.2s; - 為圖片的樣式變化添加0.2秒的過渡效果,使視覺變化更加平滑。 */
+
+
 .explore-menu-list-item .active{
     border: 4px solid tomato;
     padding: 2px;
@@ -46,9 +52,23 @@
     background-color: #E2E2E2;
     border: none;
 }
+/* 在具有"explore-menu"類別的元素中,<hr>元素將顯示為一個2像素高的淺灰色水平線,它的上方和下方各有10像素的空白,並且沒有邊框。
+這個<hr>元素被用於在餐點類別列表的下面添加分隔線,提高了內容的可讀性和視覺分隔。 */
+
 @media (max-width:1050px) {
     .explore-menu-text{
         max-width: 100%;
         font-size: 14px;
     }
 }
+/* 
+@media 是一個CSS關鍵字,用於定義媒體查詢。(max-width: 1050px)是媒體查詢的條件。
+它表示當瀏覽器視口的寬度小於或等於1050像素時,應用大括號{}內的CSS樣式。
+.explore-menu-text是一個CSS類選擇器,它選擇了具有"explore-menu-text"類別的元素。
+max-width: 100%;設置了選中元素的最大寬度為其容器的100%。
+這意味著當視口寬度小於或等於1050像素時,具有"explore-menu-text"類別的元素將佔據其容器的全部寬度。
+font-size: 14px;設置了選中元素的字體大小為14像素。
+這意味著當視口寬度小於或等於1050像素時,具有"explore-menu-text"類別的元素的字體大小將變為14像素。
+總的來說,這個媒體查詢的作用是:當瀏覽器視口的寬度小於或等於1050像素時
+(通常是在較小的屏幕上,如平板電腦或手機),具有"explore-menu-text"類別的元素將佔據其容器的全部寬度,並且字體大小將變為14像素。 
+*/
